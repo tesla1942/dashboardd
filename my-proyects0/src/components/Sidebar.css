@@ -1,0 +1,36 @@
+.sidebar {
+  background-color: #343a40; /* Set your desired background color */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px; /* Adjust width as needed */
+  height: 100vh;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Basic shadow for depth */
+  transform-style: preserve-3d; /* Enable 3D transformation for perspective */
+}
+
+.sidebar.collapsed {
+  width: 100px; /* Adjust width for collapsed state */
+}
+
+.sidebar .list-group-item {
+  border-color: transparent; /* Remove borders for a cleaner look */
+  color: #fff; /* Set text color for light background */
+}
+
+.sidebar .sidebar-toggle {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: transparent;
+  border: none;
+  color: #fff; /* Set icon color for light background */
+}
+
+.animated-button {
+  position: absolute; /* Position button within sidebar */
+  bottom: 20px; /* Adjust button position */
+  left: 50%;
+}

@@ -1,0 +1,155 @@
+/* Dashboard.css */
+
+.dashboard {
+    /* Customize the dashboard container appearance */
+    padding: 20px;
+    border: 1px solid #ded7d7;
+    border-radius: 5px;
+    background-color: #7e6a6a; /* Light background color */
+  }
+  
+  .dashboard-title {
+    /* Style the dashboard title */
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333; /* Darker text color */
+  }
+  
+  .dashboard-content {
+    box-shadow: #666;
+
+
+
+   
+  }
+  
+  .dashboard-content p {
+    
+    margin-bottom: 5px;
+    color: #666; 
+  }
+  
+  
+  .animated {
+    animation-duration: 0.5s; 
+    animation-fill-mode: forwards; 
+    animation-iteration-count: 1; 
+    animation-timing-function: ease-in-out; /
+  }
+  
+  @keyframes slide-in-down {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slide-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(10px); 
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slide-in-left {
+    from {
+      opacity: 0;
+      transform: translateX(-10px); 
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slide-in-right {
+    from {
+      opacity: 0;
+      transform: translateX(10px); 
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+  
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+ 
+  .dashboard-title.animated.slide-in-down {
+    box-shadow: #666;
+  
+  }
+  
+  .dashboard-content p.animated.fade-in {
+    box-decoration-break: clone;
+
+  
+  }
+  
+  
+  .card {
+    
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-title {
+    
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .card-content {
+    
+    margin-bottom: 5px;
+    color: #666; 
+    font-size: 0.9rem;
+    
+    
+    
+  }
+  

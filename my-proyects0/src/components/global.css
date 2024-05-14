@@ -1,0 +1,81 @@
+.animated {
+  animation-duration: 0.5s; /* Adjust animation duration as needed */
+  animation-fill-mode: forwards; /* Keep final state after animation */
+  animation-iteration-count: 1; /* Adjust animation iteration count as needed */
+  animation-timing-function: ease-in-out; /* Adjust animation timing function as needed */
+}
+
+/* New Animation Keyframes */
+
+@keyframes slide-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(10px); /* Slide in from top */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-in-down {
+  from {
+    opacity: 0;
+    transform: translateY(-10px); /* Slide in from bottom */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-10px); /* Slide in from left */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(10px); /* Slide in from right */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* Example Usage with Multiple Classes */
+
+.my-element.slide-in-up.animated {
+  /* Slide in from top with default animation settings */
+}
+
+.another-element.fade-in.animated {
+  animation-duration: 1s; /* Longer fade-in animation */
+  animation-timing-function: ease-in; /* Different timing function */
+}

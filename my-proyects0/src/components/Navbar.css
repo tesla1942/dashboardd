@@ -1,0 +1,19 @@
+.animated {
+  opacity: 0; 
+}
+
+.navbar-brand,
+.navbar-nav {
+  opacity: 1; 
+  transition: opacity 0.7s ease-in-out, transform 0.5s ease-in-out; 
+}
+
+.navbar-brand.enter {
+  opacity: 1;
+  transform: translateY(0); 
+}
+
+.navbar-nav.enter {
+  opacity: 1;
+  transform: translateY(0); 
+}

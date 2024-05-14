@@ -1,0 +1,21 @@
+.app-container {
+  display: flex; /* Allow sidebar and content to be side-by-side */
+}
+
+.sidebar {
+  width: 200px; /* Adjust width as needed */
+  transition: all 0.3s ease-in-out;
+  background-color: #343a40; /* Set sidebar background color */
+  color: #fff; /* Set sidebar text color */
+}
+
+.content {
+  flex: 1; /* Take up remaining space */
+  padding: 20px;
+}
+
+.dashboard {
+  display: flex;
+  flex-wrap: wrap; /* Allow sales cards to wrap on small screens */
+  
+}
